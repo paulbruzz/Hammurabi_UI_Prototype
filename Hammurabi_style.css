@@ -1,0 +1,59 @@
+@font-family
+{
+  font-family: Aptos;
+  src: url('assets/Aptos.ttf');
+}
+
+body
+{
+  background-color: #0d1117;
+}
+
+#topbar
+{
+  background-color: #c2181e;
+}
+
+.container-fluid
+{
+  background-color: #c2181e;
+}
+
+#esaote_logo_topbar
+{
+  width: 10%;
+  height: 10%;
+}
+
+#user_logo_topbar
+{
+  width: 3%;
+  height: 3%;
+}
+
+#inputs
+{
+  width: 70%;
+  height: 70%;
+  text-align: right;
+  color: white;
+  font-family: Aptos;
+  font-weight: bold;
+  font-size: 125%;
+  padding: 1%;
+  padding-bottom: 2%;
+}
+
+.form-control
+{
+  text-align: right;
+  color: white;
+  background-color: #333333;
+  font-family: Aptos;
+  font-weight: bold;
+}
+
+#toolbar
+{
+  height: 20%;
+}

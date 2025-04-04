@@ -13,6 +13,7 @@ body {
 
 #container-fluid-toolbar {
   background-color: #c2181e;
+  height: 7vh;
 }
 
 #esaote_logo_topbar {
@@ -62,14 +63,14 @@ body {
   height: auto; /* Maintain aspect ratio */
 }
 
-#container-fluid-toolbar li {
-  margin-right: 1.5vw; /* Change this value to your desired margin */
+#esaote_file_button_list_item{
+  margin-right: 10vw; /* Change this value to your desired margin */
 }
 
 .toolbar_icon {
   width: 4.5vh; /* Make the image fill the <li> element */
   height: auto; /* Maintain aspect ratio */
-  margin-right: 2vw;
+  margin-right: 3.5vw;
 }
 
 #image_canvas {

@@ -57,11 +57,6 @@ body {
   padding: 1%;
 }
 
-#esaote_file_button {
-  width: 100%; /* Make the image fill the <li> element */
-  height: auto; /* Maintain aspect ratio */
-}
-
 #container-fluid-toolbar li {
   margin-right: 1.5vw; /* Change this value to your desired margin */
 }

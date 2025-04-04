@@ -7,7 +7,7 @@
    viewBox="0 0 24 24"
    version="1.1"
    id="svg1"
-   sodipodi:docname="revert-svgrepo-com.svg"
+   sodipodi:docname="reset-view-svgrepo-com.svg"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -39,5 +39,5 @@
      stroke-width="2"
      d="m 8.2795942,3.3022971 -5,5 5,4.9999999 m 3.9999998,7 h 3 c 3.313709,0 6,-2.686292 6,-6 0,-3.313709 -2.686291,-5.9999999 -6,-5.9999999 H 4.2795942"
      id="path1"
-     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.7;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.7;stroke-dasharray:none;stroke-opacity:1" />
 </svg>

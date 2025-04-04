@@ -31,64 +31,60 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.483125"
-     inkscape:cx="358.08538"
-     inkscape:cy="63.13066"
+     inkscape:cx="-52.781371"
+     inkscape:cy="183.18241"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="next" />
+  <path
+     d="M 22.741402,6.2516451 9.8606903,21.813108 5.4343866,18.146393 18.315096,2.5849304 Z M 6.2900154,18.06689 9.1192638,20.41474 21.230881,5.7878194 18.39512,3.4478191 16.75227,5.4275196 17.625215,6.1519295 17.237139,6.6196374 16.364194,5.8952274 15.588043,6.8304998 16.928624,7.9429712 16.540548,8.410679 15.199967,7.2982076 14.423815,8.23348 15.296746,8.95789 14.90867,9.4255978 14.035725,8.7011879 l -0.776137,0.9352723 1.340581,1.1124718 -0.388061,0.467707 -1.340581,-1.112471 -0.776137,0.935272 0.87293,0.72441 -0.388076,0.467708 -0.87293,-0.72441 -0.776151,0.935273 1.34058,1.112471 -0.388075,0.467708 -1.340581,-1.112472 -0.7761374,0.935273 0.8729304,0.72441 -0.388076,0.467708 -0.8729444,-0.72441 -0.7761515,0.935272 1.340581,1.112471 -0.3880757,0.467708 -1.340581,-1.112471 -0.7761515,0.935272 0.8729305,0.72441 -0.3880757,0.467565 -0.8729305,-0.72441 z M 18.991384,5.1402338 c -0.201064,0.2344986 -0.175136,0.5917614 0.06002,0.8000454 0.234556,0.2011215 0.591705,0.1750502 0.799989,-0.060164 0.201064,-0.2344986 0.175136,-0.5917615 -0.06002,-0.8000454 -0.234556,-0.2011216 -0.591704,-0.1751935 -0.799988,0.060164 z"
+     id="path1-3"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1" />
   <g
-     id="g1"
-     transform="matrix(14.324895,0,0,14.324895,-98.442664,-188.19097)">
-    <path
-       d="M 8.4596827,13.573755 7.560499,14.660078 7.2515052,14.40411 8.1506887,13.317787 Z m -1.1484473,0.824805 0.1975057,0.1639 0.8454943,-1.021084 -0.1979603,-0.163352 -0.114685,0.1382 0.060939,0.05057 -0.027091,0.03265 -0.060939,-0.05057 -0.054182,0.06529 0.093584,0.07766 -0.027091,0.03265 -0.093584,-0.07766 -0.054182,0.06529 0.060938,0.05057 -0.027091,0.03265 -0.060939,-0.05057 -0.054181,0.06529 0.093584,0.07766 -0.02709,0.03265 -0.093584,-0.07766 -0.054181,0.06529 0.060938,0.05057 -0.027091,0.03265 -0.060938,-0.05057 -0.054182,0.06529 0.093584,0.07766 -0.027091,0.03265 -0.093584,-0.07766 -0.054181,0.06529 0.060938,0.05057 -0.027091,0.03265 -0.060939,-0.05057 -0.054182,0.06529 0.093584,0.07766 -0.027091,0.03265 -0.093584,-0.07766 -0.054182,0.06529 0.060938,0.05057 -0.027091,0.03264 -0.060938,-0.05057 z m 0.886664,-0.902391 c -0.014036,0.01637 -0.012226,0.04131 0.00419,0.05585 0.016374,0.01404 0.041306,0.01222 0.055846,-0.0042 0.014036,-0.01637 0.012226,-0.04131 -0.00419,-0.05585 -0.016374,-0.01404 -0.041306,-0.01223 -0.055846,0.0042 z"
-       id="path1-3"
-       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1" />
-    <g
-       id="g4-9"
-       transform="matrix(0.02222624,-0.00602331,0.00602331,0.02222624,6.3759089,13.364212)"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1">
-      <circle
-         cx="31.99"
-         cy="19.360001"
-         r="5.4099998"
-         stroke-linecap="round"
-         id="circle1-1"
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
-      <line
-         x1="31.99"
-         y1="24.77"
-         x2="16.98"
-         y2="56.889999"
-         stroke-linecap="round"
-         id="line1"
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
-      <line
-         x1="31.99"
-         y1="24.77"
-         x2="47"
-         y2="56.73"
-         stroke-linecap="round"
-         id="line2"
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
-      <line
-         x1="31.99"
-         y1="7.1100001"
-         x2="31.99"
-         y2="13.95"
-         stroke-linecap="round"
-         id="line3"
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
-      <line
-         x1="17.200001"
-         y1="40.07"
-         x2="47.02"
-         y2="40.07"
-         stroke-linecap="round"
-         id="line4"
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
+     id="g4-9"
+     transform="matrix(0.31838855,-0.08628328,0.08628328,0.31838855,-7.1084385,3.2499637)"
+     style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1">
+    <circle
+       cx="31.99"
+       cy="19.360001"
+       r="5.4099998"
+       stroke-linecap="round"
+       id="circle1-1"
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="31.99"
+       y1="24.77"
+       x2="16.98"
+       y2="56.889999"
+       stroke-linecap="round"
+       id="line1"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="31.99"
+       y1="24.77"
+       x2="47"
+       y2="56.73"
+       stroke-linecap="round"
+       id="line2"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="31.99"
+       y1="7.1100001"
+       x2="31.99"
+       y2="13.95"
+       stroke-linecap="round"
+       id="line3"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="17.200001"
+       y1="40.07"
+       x2="47.02"
+       y2="40.07"
+       stroke-linecap="round"
+       id="line4"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.43538;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>

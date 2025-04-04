@@ -13,11 +13,8 @@
   <nav id="topbar" class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <img id="esaote_logo_topbar" src="assets/esaote_vector.svg" alt="Esaote Logo">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <!-- Add your navbar items here -->
+        <!-- HAMMURABI LOGO??? -->
       </div>
       <img id="user_logo_topbar" src="assets/user-circle-svgrepo-com.svg" alt="User Logo" class="ms-auto">
     </div>
@@ -44,7 +41,7 @@
       </form>
     </section>
     <section id="viewer">
-      <section id="toolbar">
+      <div id="toolbar">
         <div class="container-fluid d-flex align-items-center" style="height: 8vh;" id="container-fluid-toolbar">
           <ul class="d-flex list-unstyled mb-0">
             <li class="toolbar_icon" style="margin-right: 5vw;">
@@ -63,23 +60,50 @@
               <img class="toolbar_icon" src="assets/note-svgrepo-com.svg" alt="Annotation icon">
             </li>
             <li>
-              <img class="toolbar_icon" src="assets/note-svgrepo-com.svg" alt="Annotation icon">
+              <img class="toolbar_icon" src="assets/measure-svgrepo-com.svg" alt="Measure icon">
             </li>
             <li>
-              <img class="toolbar_icon" src="assets/note-svgrepo-com.svg" alt="Annotation icon">
+              <img class="toolbar_icon" src="assets/fullscreen-svgrepo-com.svg" alt="Fullscreen icon">
             </li>
             <li>
-              <img class="toolbar_icon" src="assets/note-svgrepo-com.svg" alt="Annotation icon">
+              <img class="toolbar_icon" src="assets/flip-horizontal-svgrepo-com.svg" alt="Flip Horizonally icon">
             </li>
             <li>
-              <img class="toolbar_icon" src="assets/note-svgrepo-com.svg" alt="Annotation icon">
+              <img class="toolbar_icon" src="assets/flip-vertical-svgrepo-com.svg" alt="Flip Vertically icon">
             </li>
             <li>
-              <img class="toolbar_icon" src="assets/note-svgrepo-com.svg" alt="Annotation icon">
+              <img class="toolbar_icon" src="assets/reset-view-svgrepo-com.svg" alt="Reset View icon">
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+      <div id="image_canvas">
+        <img src="assets/DICOM_Sample.jpg" alt="Sample DICOM Image" id="dicom_image">
+      </div>
+      <div id="viewer_bottom_info_panel">
+        <table id="info_table">
+          <tr id="header_row">
+            <th>Measure</th>
+            <th>View</th>
+            <th>Color</th>
+          </tr>
+          <tr class="data_row">
+            <td>X coord: (20; 50)</td>
+            <td>Zoom: 88%</td>
+            <td>LUT: None</td>
+          </tr>
+          <tr class="data_row">
+            <td>O coord: (235; 357)</td>
+            <td>View Center: (223; 305)</td>
+            <td>Pixel RGB: (132; 132; 132)</td>
+          </tr>  
+          <tr class="data_row">
+            <td>Angle: 57°</td>
+            <td>View Rotation: 0°</td>
+            <td>Contrast: 73%</td>
+          </tr>             
+        </table>
+      </div>
     </section>
   </main>
   <footer></footer>

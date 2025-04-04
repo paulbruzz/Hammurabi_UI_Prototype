@@ -51,6 +51,7 @@ body {
   width: 66.67vw;
   background-color: black;
   border: 0.25vh solid #c2181e;
+  border-radius: 1vh;
 }
 
 #toolbar {
@@ -84,12 +85,16 @@ body {
   height: auto;
 }
 
+#viewer_bottom_info_panel{
+  padding-bottom: 1vh;
+}
+
 #info_table{
   width: 100%;
   height: auto;  
   background-color: black;
   font-family: 'Aptos', sans-serif;
-  padding: 1%;
+  padding: 1%;  
 }
 
 #header_row{

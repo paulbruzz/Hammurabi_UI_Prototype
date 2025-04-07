@@ -18,7 +18,7 @@
 <body>
 
   <div class="auth-container">
-    <span><img id="esaote_logo" src="assets/esaote_vector.svg" alt="Esaote Logo" /></span>
+    <img id="esaote_logo" src="assets/esaote_vector.svg" alt="Esaote Logo" />
     <!-- Navigation Tabs -->
     <ul class="nav nav-pills nav-justified mb-3" id="auth-tabs" role="tablist">
       <li class="nav-item" role="presentation">
@@ -53,13 +53,25 @@
           </div>
 
           <button type="submit" class="btn btn-primary w-100">Sign in</button>
+          <hr>
+
+          <div class="text-center mb-3">
+            <p>Sign in with:</p>
+          
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <img src="https://cdn.simpleicons.org/apple/000000" alt="Apple" width="24" height="24" />
+            </button>
+          
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <img src="https://cdn.simpleicons.org/google/000000" alt="Google" width="24" height="24" />
+            </button>
+          </div>
         </form>
       </div>
 
       <!-- Register Tab -->
       <div class="tab-pane fade" id="register" role="tabpanel">
-        <form>
-
+        <form>          
           <div class="form-outline">
             <label for="registerUsername" class="form-label">Username</label>
             <input type="text" class="form-control" id="registerUsername" required />
@@ -82,10 +94,21 @@
 
           <div class="form-check d-flex justify-content-center mb-4">
             <input class="form-check-input me-2" type="checkbox" id="registerAgreement" required />
-            <label class="form-check-label" for="registerAgreement">I agree to the terms</label>
+            <label class="form-check-label" for="registerAgreement">I agree to the Terms of Use</label>
           </div>
 
           <button type="submit" class="btn btn-primary w-100">Register</button>
+          <hr>
+          <div class="text-center mb-3">
+            <p>Or sign up with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <img src="https://cdn.simpleicons.org/apple/000000" alt="Apple" width="24" height="24" />
+            </button>
+          
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <img src="https://cdn.simpleicons.org/google/000000" alt="Google" width="24" height="24" />
+            </button>
+          </div>
         </form>
       </div>
     </div>

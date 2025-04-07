@@ -1,136 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic page setup -->
   <meta charset="UTF-8" />
   <title>Hammurabi UI Prototype</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="" />
 
-  <!-- Bootstrap CSS for styling and layout -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" type="text/css" href="Hammurabi_style.css" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="Hammurabi_style.css" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/esaote_e.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/esaote_e.svg" />
 </head>
 <body>
-  <!-- Top navigation bar -->
+  <!-- Top Navigation Bar -->
   <nav id="topbar" class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <!-- Esaote logo -->
-      <img id="esaote_logo_topbar" src="assets/esaote_vector.svg" alt="Esaote Logo">
+      <img id="esaote_logo_topbar" src="assets/esaote_vector.svg" alt="Esaote Logo" />
       
-      <!-- Placeholder for potential Hammurabi branding -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <!-- HAMMURABI LOGO??? -->
+        <!-- Placeholder for Hammurabi branding -->
       </div>
 
-      <!-- User icon aligned to the right -->
-      <img id="user_logo_topbar" src="assets/user-circle-svgrepo-com.svg" alt="User Logo" class="ms-auto">
+      <img id="user_logo_topbar" src="assets/user-circle-svgrepo-com.svg" alt="User Logo" class="ms-auto" />
     </div>
-  </nav>  
+  </nav>
 
   <main>
     <aside>
       <div id="DICOM_metadata_panel">
-        <!-- Section with checkboxes to select metadata info -->
+        <!-- Checkbox Section -->
         <section id="buttons">
           <h1>Select Info</h1>
           <div class="container-fluid d-flex align-items-center" id="container-fluid-buttons">
-            <!-- Each checkbox corresponds to a metadata category -->
-            <input type="checkbox" class="form-check-input" id="patient_checkbox"></input>
+            <div class="form-check me-3">
+              <input class="form-check-input" type="checkbox" id="patient_checkbox" />
               <label class="form-check-label" for="patient_checkbox">Patient</label>
-            <input type="checkbox" class="form-check-input" id="study_checkbox"></input>
+            </div>
+            <div class="form-check me-3">
+              <input class="form-check-input" type="checkbox" id="study_checkbox" />
               <label class="form-check-label" for="study_checkbox">Study</label>
-            <input type="checkbox" class="form-check-input" id="series_checkbox"></input>
+            </div>
+            <div class="form-check me-3">
+              <input class="form-check-input" type="checkbox" id="series_checkbox" />
               <label class="form-check-label" for="series_checkbox">Series</label>
-            <input type="checkbox" class="form-check-input" id="image_checkbox"></input>
+            </div>
+            <div class="form-check me-3">
+              <input class="form-check-input" type="checkbox" id="image_checkbox" />
               <label class="form-check-label" for="image_checkbox">Image</label>
-            <input type="checkbox" class="form-check-input" id="equipment_checkbox"></input>
+            </div>
+            <div class="form-check me-3">
+              <input class="form-check-input" type="checkbox" id="equipment_checkbox" />
               <label class="form-check-label" for="equipment_checkbox">Equipment</label>
+            </div>
           </div>
         </section>
 
-        <!-- Table displaying DICOM metadata -->      
-        <h1>Patient Information</h1>
-        <table id="DICOM_metadata_table">
-          <tr>
-            <td class="Metadata_key">Patient ID</td>
-            <td class="Metadata_value">123</td>
-          </tr>          
-          <!-- Metadata rows will be dynamically inserted here -->
-          <tr>
-            <td class="Metadata_key">Name</td>
-            <td class="Metadata_value">Ronaldo de Assis Moreira</td>
-          </tr> 
-        </table>
-      </div>      
+        <!-- Metadata Tables -->
+        <div class="overflow-scroll">
+          <!-- Patient Info -->
+          <h1>Patient Information</h1>
+          <table class="DICOM_metadata_table" id="DICOM_patient_info_table">
+            <tr><td class="Metadata_key">Patient ID</td><td class="Metadata_value">123</td></tr>
+            <tr><td class="Metadata_key">Name</td><td class="Metadata_value">Ronaldo de Assis Moreira</td></tr>
+            <tr><td class="Metadata_key">Date of Birth</td><td class="Metadata_value">21/03/1980</td></tr>
+            <tr><td class="Metadata_key">Patient Sex</td><td class="Metadata_value">M</td></tr>
+          </table>
+
+          <!-- Study Info -->
+          <h1>Study Information</h1>
+          <table class="DICOM_metadata_table" id="DICOM_study_info_table">
+            <tr>
+              <td class="Metadata_key">Instance UID</td>
+              <td class="Metadata_value">
+                1.3.6.1.4.1.<br />14519.5.2.1.6834.5010.<br />
+                119076582718824960697635220329
+              </td>
+            </tr>
+            <tr><td class="Metadata_key">Study Date</td><td class="Metadata_value">28/03/2008</td></tr>
+            <tr><td class="Metadata_key">Study Start Time</td><td class="Metadata_value">11:08 AM</td></tr>
+            <tr><td class="Metadata_key">Accession Number</td><td class="Metadata_value">2819497684894126</td></tr>
+            <tr><td class="Metadata_key">Study Description</td><td class="Metadata_value">p4</td></tr>
+          </table>
+
+          <!-- Series Info -->
+          <h1>Series Information</h1>
+          <table class="DICOM_metadata_table" id="DICOM_series_info_table">
+            <tr>
+              <td class="Metadata_key">Instance UID</td>
+              <td class="Metadata_value">
+                1.3.6.1.4.1.14519.5.2.1.6834.5010.790522551686608875035017785508
+              </td>
+            </tr>
+            <tr><td class="Metadata_key">Study Date</td><td class="Metadata_value">28/03/2008</td></tr>
+            <tr><td class="Metadata_key">Study Start Time</td><td class="Metadata_value">11:08 AM</td></tr>
+            <tr><td class="Metadata_key">Accession Number</td><td class="Metadata_value">2819497684894126</td></tr>
+            <tr><td class="Metadata_key">Study Description</td><td class="Metadata_value">p4</td></tr>
+          </table>
+        </div>
+      </div>
     </aside>
 
-    <!-- Section for patient/study input fields -->
+    <!-- Input Fields -->
     <section id="inputs">
       <form class="row g-3">
-        <!-- Patient ID input -->
         <div class="col-md-3 input-column">
           <label for="patientID" class="form-label">Patient ID</label>
-          <input type="text" class="form-control" id="patientID">
+          <input type="text" class="form-control" id="patientID" />
         </div>
-
-        <!-- Study input -->
         <div class="col-md-3 input-column">
           <label for="study" class="form-label">Study</label>
-          <input type="text" class="form-control" id="study">
+          <input type="text" class="form-control" id="study" />
         </div>
-
-        <!-- Series input -->
         <div class="col-md-3 input-column">
           <label for="series" class="form-label">Series</label>
-          <input type="text" class="form-control" id="series">
+          <input type="text" class="form-control" id="series" />
         </div>
-
-        <!-- Instance input -->
         <div class="col-md-3 input-column">
           <label for="instance" class="form-label">Instance</label>
-          <input type="text" class="form-control" id="instance">
+          <input type="text" class="form-control" id="instance" />
         </div>
       </form>
-    </section>    
+    </section>
 
-    <!-- Main image viewer section -->
+    <!-- Viewer Section -->
     <section id="viewer">
-
-      <!-- Toolbar with viewer tools (icons) -->
+      <!-- Toolbar -->
       <div id="toolbar">
         <div class="container-fluid d-flex align-items-center" id="container-fluid-toolbar">
           <ul class="d-flex list-unstyled mb-0">
-            <!-- Toolbar icons for interaction tools -->
             <li class="toolbar_icon" id="esaote_file_button_list_item">
-              <img id="esaote_file_button" src="assets/esaote_e.svg" alt="Esaote Logo">
+              <img id="esaote_file_button" src="assets/esaote_e.svg" alt="Esaote Logo" />
             </li>
-            <li><img class="toolbar_icon" src="assets/zoom-in-svgrepo-com.svg" alt="Zoom icon"></li>
-            <li><img class="toolbar_icon" src="assets/rotate-svgrepo-com.svg" alt="Rotate icon"></li>
-            <li><img class="toolbar_icon" src="assets/pan-svgrepo-com.svg" alt="Pan icon"></li>
-            <li><img class="toolbar_icon" src="assets/note-svgrepo-com.svg" alt="Annotation icon"></li>
-            <li><img class="toolbar_icon" src="assets/measure-svgrepo-com.svg" alt="Measure icon"></li>
-            <li><img class="toolbar_icon" src="assets/fullscreen-svgrepo-com.svg" alt="Fullscreen icon"></li>
-            <li><img class="toolbar_icon" src="assets/flip-horizontal-svgrepo-com.svg" alt="Flip Horizonally icon"></li>
-            <li><img class="toolbar_icon" src="assets/flip-vertical-svgrepo-com.svg" alt="Flip Vertically icon"></li>
-            <li><img class="toolbar_icon" src="assets/reset-view-svgrepo-com.svg" alt="Reset View icon"></li>
-            <li><img class="toolbar_icon" src="assets/info-svgrepo-com.svg" alt="Info icon"></li>
+            <li><img class="toolbar_icon" src="assets/zoom-in-svgrepo-com.svg" alt="Zoom icon" /></li>
+            <li><img class="toolbar_icon" src="assets/rotate-svgrepo-com.svg" alt="Rotate icon" /></li>
+            <li><img class="toolbar_icon" src="assets/pan-svgrepo-com.svg" alt="Pan icon" /></li>
+            <li><img class="toolbar_icon" src="assets/note-svgrepo-com.svg" alt="Annotation icon" /></li>
+            <li><img class="toolbar_icon" src="assets/measure-svgrepo-com.svg" alt="Measure icon" /></li>
+            <li><img class="toolbar_icon" src="assets/fullscreen-svgrepo-com.svg" alt="Fullscreen icon" /></li>
+            <li><img class="toolbar_icon" src="assets/flip-horizontal-svgrepo-com.svg" alt="Flip Horizontally icon" /></li>
+            <li><img class="toolbar_icon" src="assets/flip-vertical-svgrepo-com.svg" alt="Flip Vertically icon" /></li>
+            <li><img class="toolbar_icon" src="assets/reset-view-svgrepo-com.svg" alt="Reset View icon" /></li>
+            <li><img class="toolbar_icon" src="assets/info-svgrepo-com.svg" alt="Info icon" /></li>
           </ul>
         </div>
       </div>
 
-      <!-- Image display canvas -->
+      <!-- Image Display -->
       <div id="image_canvas">
-        <!-- Placeholder DICOM image -->
-        <img src="assets/DICOM_Sample.jpg" alt="Sample DICOM Image" id="dicom_image">
+        <img src="assets/DICOM_Sample.jpg" alt="Sample DICOM Image" id="dicom_image" />
       </div>
 
-      <!-- Panel displaying live viewer info like zoom level, coordinates, etc. -->
+      <!-- Viewer Info Panel -->
       <div id="viewer_bottom_info_panel">
         <table id="view_info_table">
           <tr id="header_row">
@@ -138,7 +162,6 @@
             <th>View</th>
             <th>Color</th>
           </tr>
-          <!-- Example data rows -->
           <tr class="data_row">
             <td>X coord: (20; 50)</td>
             <td>Zoom: 88%</td>
@@ -148,21 +171,31 @@
             <td>O coord: (235; 357)</td>
             <td>View Center: (223; 305)</td>
             <td>Pixel RGB: (132; 132; 132)</td>
-          </tr>  
+          </tr>
           <tr class="data_row">
             <td>Angle: 57°</td>
             <td>View Rotation: 0°</td>
             <td>Contrast: 73%</td>
-          </tr>             
+          </tr>
         </table>
       </div>
+
+      <!-- Transport Controls -->
+      <div id="transport_controls">
+        <div class="container-fluid d-flex align-items-center" id="transport_control_bar">
+          <ul class="d-flex list-unstyled mb-0">
+            <li><img class="transport_icon" src="assets/first-svgrepo-com.svg" alt="First Image icon" /></li>
+            <li><img class="transport_icon" src="assets/previous-svgrepo-com.svg" alt="Previous Image icon" /></li>
+            <span id="Showing_image">Showing image 1 of 50</span>
+            <li><img class="transport_icon" src="assets/next-svgrepo-com.svg" alt="Next Image icon" /></li>
+            <li><img class="transport_icon" src="assets/last-svgrepo-com.svg" alt="Last Image icon" /></li>
+          </ul>
+        </div>
+      </div>
     </section>
-  </main>  
+  </main>
 
-  <!-- Footer (currently empty) -->
-  <footer></footer>
-
-  <!-- Bootstrap JS for interactive components -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Aptos';
+  src: url('assets/Aptos.ttf') format('truetype');
+}
+
+/* ===== Global Styles ===== */
+body {
+  background-color: #0d1117;
+  font-family: 'Aptos', sans-serif;
+}
+
+/* ===== Topbar ===== */
+#topbar {
+  background-color: #c2181e;
+  margin-bottom: 3vh;
+}
+
+#esaote_logo {
+  width: 15vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4vh;  
+}
+
+#user_logo_topbar {
+  width: 2.25vw;
+  height: auto;
+  margin-right: 0.5vw;
+}
+
+/* ===== Inputs ===== */
+#inputs {
+  width: 66.67vw;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  font-size: 125%;
+  padding: 1vh 0 2vh;
+}
+
+#inputs .form-control {
+  text-align: right;
+  color: white;
+  background-color: #333;
+  font-weight: bold;
+  height: 4vh;
+}
+
+/* ===== Login/Registration pills ===== */
+
+.auth-container {
+  max-width: 500px;
+  margin-top: 5vh;
+  margin-left: 33.33%;
+  margin-right: 33.33%;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.nav-pills .nav-link.active {
+  background-color: #c2181e;
+}
+
+.form-outline {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+button.btn-primary {
+  background-color: #c2181e;
+  border-color: white;
+}
+
+button.btn-primary:hover {
+  background-color: #c2181e;
+}
+
+.nav-pills {
+  margin-bottom: 2rem;
+}

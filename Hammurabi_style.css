@@ -51,6 +51,7 @@ body {
 /* ===== Viewer ===== */
 #viewer {
   width: 66.67vw;
+  height: 80vh;
   background-color: black;
   border: 0.25vh solid #c2181e;
   border-radius: 1vh;
@@ -162,12 +163,13 @@ aside {
   float: right;
   display: block;
   width: 30vw;
+  height: 80vh;
   margin: 0 1vw;
   color: white;
 }
 
 aside h1 {
-  font-size: 200%;
+  font-size: 4vh;
   font-weight: bold;
   padding: 1vh;
 }
@@ -178,6 +180,7 @@ aside h1 {
   color: white;
   padding: 1vh;
   margin-top: 2vh;
+  width: 30vw;
 }
 
 .DICOM_metadata_table tr,
@@ -185,12 +188,13 @@ aside h1 {
 .DICOM_metadata_table th {
   background-color: #333;
   font-weight: bold;
+  font-size: 2.5vh;
   color: white;
   margin: 0 0.5vw;
 }
 
 .DICOM_metadata_table td {
-  padding-left: 3vw;
+  padding-left: 2.5vw;
 }
 
 .DICOM_metadata_table td.Metadata_key {
@@ -202,7 +206,7 @@ aside h1 {
   text-align: right;
 }
 
-/* ===== Bottom Buttons ===== */
+/* ===== Info Panel Buttons ===== */
 
 #container-fluid-buttons {
   margin: 1vh 0;

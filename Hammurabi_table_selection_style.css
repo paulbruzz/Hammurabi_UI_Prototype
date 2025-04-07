@@ -7,16 +7,13 @@
 body {
   background-color: #0d1117;
   font-family: 'Aptos', sans-serif;
+  color: white;
 }
 
 /* ===== Topbar ===== */
-#topbar,
-#container-fluid-toolbar {
+#topbar {
   background-color: #c2181e;
-}
-
-#container-fluid-toolbar {
-  height: 7vh;
+  margin-bottom: 3vh;
 }
 
 #esaote_logo_topbar {
@@ -48,181 +45,33 @@ body {
   height: 4vh;
 }
 
-/* ===== Viewer ===== */
-#viewer {
-  width: 66.67vw;
-  height: 80vh;
-  background-color: black;
-  border: 0.25vh solid #c2181e;
+/* ===== Table top bar and title ===== */
+#patient_table{
+  margin-top: 2vh;
+  width: 90vw;
+  margin-left: 5vw;
+  border: 0.1vh solid white;
+}
+
+#patient_table th{
+  background-color: #f7a7aa;
+  margin-left: 1vw;
+} 
+
+#patient_table td{
+  background-color: #0d1117;
+  margin-left: 1vw;
+  color: white;
+} 
+
+#table_top_bar{
+  background-color: #c2181e;
+  margin-left: 5vw;
+  margin-right: 5vw;
   border-radius: 1vh;
 }
 
-/* ===== Toolbar and Transport Controls ===== */
-#toolbar,
-#transport_controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1vw;
-  padding-bottom: 1vh;
-}
-
-#toolbar li,
-#transport_controls li {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Icons */
-.toolbar_icon,
-.transport_icon {
-  width: 4.5vh;
-  height: auto;
-  margin-right: 2vw;
-  max-width: 5vw;
-  object-fit: contain;
-}
-
-/* Centering Transport Controls Container */
-#transport_controls {
-  width: fit-content;
-  margin: 2vh auto;
-}
-
-/* File Button */
-#esaote_file_button {
-  width: 100%;
-  height: auto;
-}
-
-#esaote_file_button_list_item {
-  margin: 0 10vw 0 0.2vw;
-}
-
-/* DICOM image canvas */
-#image_canvas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#dicom_image {
-  width: 20vw;
-  height: auto;
-}
-
-/* ===== Bottom Info Panel ===== */
-#viewer_bottom_info_panel {
-  width: 100%; /* Take full width of the parent container */
-  padding: 1vh 1vw; /* Adjust padding for responsiveness */
-}
-
-#view_info_table {
-  width: 100%; /* Ensure table takes full available width */
-  background-color: black;
-  padding: 1%; /* Add some padding to table content */
-  font-size: 1.25vw; /* Adjust font size based on the viewport width */
-}
-
-#header_row {
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem; /* Adjust font size for header rows */
-}
-
-.data_row {
-  color: yellow;
-}
-
-#view_info_table tr,
-#view_info_table td,
-#view_info_table th {
-  background-color: black;
-  padding-left: 1%; /* Keep padding for cells */
-}
-
-#view_info_table th {
-  width: 33.3333%; /* Each column takes one-third of the width */
-}
-
-/* Showing image text */
-#Showing_image {
-  color: white;
-  font-weight: bold;
-  font-size: 125%;
-  margin: 0.75vw 1vw 0;
-  width: 15vw;
-  text-align: center;
-}
-
-/* ===== Sidebar Panel ===== */
-aside {
-  float: right;
-  display: block;
-  width: 30vw;
-  height: 80vh;
-  margin: 0 1vw;
-  color: white;
-}
-
-aside h1 {
+#table_title{
+  margin-left: 2vw;
   font-size: 4vh;
-  font-weight: bold;
-  padding: 1vh;
-}
-
-/* DICOM Metadata Panel */
-#DICOM_metadata_panel {
-  background-color: #333;
-  color: white;
-  padding: 1vh;
-  margin-top: 2vh;
-  width: 30vw;
-}
-
-.DICOM_metadata_table tr,
-.DICOM_metadata_table td,
-.DICOM_metadata_table th {
-  background-color: #333;
-  font-weight: bold;
-  font-size: 2.5vh;
-  color: white;
-  margin: 0 0.5vw;
-}
-
-.DICOM_metadata_table td {
-  padding-left: 2.5vw;
-}
-
-.DICOM_metadata_table td.Metadata_key {
-  text-align: left;
-  padding-right: 2vw;
-}
-
-.DICOM_metadata_table td.Metadata_value {
-  text-align: right;
-}
-
-/* ===== Info Panel Buttons ===== */
-
-#container-fluid-buttons {
-  margin: 1vh 0;
-}
-
-#container-fluid-buttons > input {
-  background-color: #0d1117;
-  color: white;
-  font-weight: bold;
-  font-size: 125%;
-  padding: 1vh;
-  margin: 2vh 0;
-}
-
-#container-fluid-buttons > label {
-  color: white;
-  font-weight: bold;
-  margin: 0 0.5vw;
 }

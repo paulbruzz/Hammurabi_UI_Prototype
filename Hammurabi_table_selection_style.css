@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Aptos';
+  src: url('assets/Aptos.ttf') format('truetype');
+}
+
+/* ===== Global Styles ===== */
+body {
+  background-color: #0d1117;
+  font-family: 'Aptos', sans-serif;
+  color: white;
+}
+
+/* ===== Topbar ===== */
+#topbar {
+  background-color: #c2181e;
+  margin-bottom: 3vh;
+}
+
+#esaote_logo_topbar {
+  width: 8.5vw;
+  height: auto;
+}
+
+#user_logo_topbar {
+  width: 2.25vw;
+  height: auto;
+  margin-right: 0.5vw;
+}
+
+/* ===== Inputs ===== */
+#inputs {
+  width: 66.67vw;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  font-size: 125%;
+  padding: 1vh 0 2vh;
+}
+
+#inputs .form-control {
+  text-align: right;
+  color: white;
+  background-color: #333;
+  font-weight: bold;
+  height: 4vh;
+}
+
+/* ===== Table top bar and title ===== */
+#patient_table{
+  margin-top: 2vh;
+  width: 90vw;
+  margin-left: 5vw;
+  border: 0.1vh solid white;
+}
+
+#patient_table th{
+  background-color: #f7a7aa;
+  margin-left: 1vw;
+} 
+
+#patient_table td{
+  background-color: #0d1117;
+  margin-left: 1vw;
+  color: white;
+} 
+
+#table_top_bar{
+  background-color: #c2181e;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-radius: 1vh;
+}
+
+#table_title{
+  margin-left: 2vw;
+  font-size: 4vh;
+}

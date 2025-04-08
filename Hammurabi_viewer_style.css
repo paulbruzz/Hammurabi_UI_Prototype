@@ -1,3 +1,4 @@
+/* ===== Font ===== */
 @font-face {
   font-family: 'Aptos';
   src: url('assets/Aptos.ttf') format('truetype');
@@ -17,29 +18,32 @@ body {
 
 #container-fluid-toolbar {
   height: 7vh;
-  width: 100%;
+  width: 66.67vw;
+  margin-left: 1vw;
+}
+
+#esaote_logo_topbar,
+#user_logo_topbar {
+  height: auto;
 }
 
 #esaote_logo_topbar {
   width: 8.5vw;
-  height: auto;
 }
 
 #user_logo_topbar {
   width: 2.25vw;
-  height: auto;
   margin-right: 0.5vw;
 }
 
-/* ===== Viewer ===== */
+/* ===== Viewer Panel ===== */
 #viewer {
   width: 66.67vw;
   height: 90vh;
   background-color: black;
   border: 0.25vh solid #c2181e;
   border-radius: 1vh;
-  margin-top: 2vh;
-  margin-left: 1vw;
+  margin: 2vh 0 0 1vw;
 }
 
 /* ===== Toolbar and Transport Controls ===== */
@@ -50,7 +54,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 1vw;
-  padding-bottom: 1vh;
 }
 
 #toolbar li,
@@ -61,20 +64,21 @@ body {
   justify-content: center;
 }
 
-/* Icons */
+/* Shared icon styles */
 .toolbar_icon,
 .transport_icon {
   width: 4.5vh;
+  max-width: 5vw;
   height: auto;
   margin-right: 2vw;
-  max-width: 5vw;
   object-fit: contain;
 }
 
-/* Centering Transport Controls Container */
+/* Center transport controls container */
 #transport_controls {
   width: fit-content;
   margin: 2vh auto;
+  padding-bottom: 1vh;
 }
 
 /* File Button */
@@ -87,7 +91,7 @@ body {
   margin: 0 10vw 0 0.2vw;
 }
 
-/* DICOM image canvas */
+/* ===== DICOM Image Canvas ===== */
 #image_canvas {
   display: flex;
   justify-content: center;
@@ -101,21 +105,21 @@ body {
 
 /* ===== Bottom Info Panel ===== */
 #viewer_bottom_info_panel {
-  width: 100%; /* Take full width of the parent container */
-  padding: 1vh 1vw; /* Adjust padding for responsiveness */
+  width: 100%;
+  padding: 1vh 1vw;
 }
 
 #view_info_table {
-  width: 100%; /* Ensure table takes full available width */
+  width: 100%;
   background-color: black;
-  padding: 1%; /* Add some padding to table content */
-  font-size: 1.25vw; /* Adjust font size based on the viewport width */
+  padding: 1%;
+  font-size: 1.25vw;
 }
 
 #header_row {
   color: white;
   font-weight: bold;
-  font-size: 1.5rem; /* Adjust font size for header rows */
+  font-size: 1.5rem;
 }
 
 .data_row {
@@ -126,11 +130,11 @@ body {
 #view_info_table td,
 #view_info_table th {
   background-color: black;
-  padding-left: 1%; /* Keep padding for cells */
+  padding-left: 1%;
 }
 
 #view_info_table th {
-  width: 33.3333%; /* Each column takes one-third of the width */
+  width: 33.3333%;
 }
 
 /* Showing image text */
@@ -159,39 +163,7 @@ aside h1 {
   padding: 1vh;
 }
 
-/* DICOM Metadata Panel */
-#DICOM_metadata_panel {
-  background-color: #333;
-  color: white;
-  padding: 1vh;
-  width: 30vw;
-}
-
-.DICOM_metadata_table tr,
-.DICOM_metadata_table td,
-.DICOM_metadata_table th {
-  background-color: #333;
-  font-weight: bold;
-  font-size: 2.5vh;
-  color: white;
-  margin: 0 0.5vw;
-}
-
-.DICOM_metadata_table td {
-  padding-left: 2.5vw;
-}
-
-.DICOM_metadata_table td.Metadata_key {
-  text-align: left;
-  padding-right: 2vw;
-}
-
-.DICOM_metadata_table td.Metadata_value {
-  text-align: right;
-}
-
 /* ===== Info Panel Buttons ===== */
-
 #container-fluid-buttons {
   margin: 1vh 0;
 }
@@ -209,4 +181,55 @@ aside h1 {
   color: white;
   font-weight: bold;
   margin: 0 0.5vw;
+}
+
+/* ===== DICOM Metadata Panel ===== */
+#DICOM_metadata_panel {
+  background-color: #333;
+  color: white;
+  padding: 1vh;
+  width: 30vw;
+  height: 90vh;
+}
+
+.DICOM_metadata_table {
+  width: 100%;
+  table-layout: fixed; /* Important for text wrapping */
+}
+
+.DICOM_metadata_table tr,
+.DICOM_metadata_table td,
+.DICOM_metadata_table th {
+  background-color: #333;
+  font-size: 2vh;
+  color: white;
+  margin: 0 0.5vw;
+}
+
+.DICOM_metadata_table td {
+  padding-left: 2.5vw;
+}
+
+.metadata_table_heading{
+  margin-top: 2vh;
+  margin-left: 1vw;
+  font-weight: bold;
+}
+
+.DICOM_metadata_table td.Metadata_key {
+  width: 30%;
+  text-align: left;
+  padding-right: 2vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.DICOM_metadata_table td.Metadata_value {
+  width: 70%;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
